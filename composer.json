@@ -5,7 +5,6 @@
         "presenter",
         "view",
         "laravel",
-        "eru/presenter",
         "eru"
     ],
     "license": "MIT",
