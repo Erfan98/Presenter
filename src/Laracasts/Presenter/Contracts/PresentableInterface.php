@@ -1,4 +1,4 @@
-<?php namespace Laracasts\Presenter\Contracts;
+<?php namespace eru\Presenter\Contracts;
 
 interface PresentableInterface {
 

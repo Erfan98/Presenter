@@ -14,7 +14,7 @@ Pull this package in through Composer.
 ```js
 {
     "require": {
-        "laracasts/presenter": "0.1.*"
+        "eru/presenter": "0.1.*"
     }
 }
 ```
@@ -26,7 +26,7 @@ The first step is to store your presenters somewhere - anywhere. These will be s
 Here's an example of a presenter.
 
 ```php
-use Laracasts\Presenter\Presenter;
+use eru\Presenter\Presenter;
 
 class UserPresenter extends Presenter {
 
@@ -43,14 +43,14 @@ class UserPresenter extends Presenter {
 }
 ```
 
-Next, on your entity, pull in the `Laracasts\Presenter\PresentableTrait` trait, which will automatically instantiate your presenter class.
+Next, on your entity, pull in the `eru\Presenter\PresentableTrait` trait, which will automatically instantiate your presenter class.
 
 Here's an example - maybe a Laravel `User` model.
 
 ```php
 <?php
 
-use Laracasts\Presenter\PresentableTrait;
+use eru\Presenter\PresentableTrait;
 
 class User extends \Eloquent {
 
@@ -71,4 +71,4 @@ Notice how the call to the `present()` method (which will return your new or cac
 
 Have fun!
 
-Jeffrey @ [https://laracasts.com](https://laracasts.com)
+Jeffrey @ [https://eru.com](https://eru.com)

@@ -1,3 +1,3 @@
-<?php namespace Laracasts\Presenter\Exceptions;
+<?php namespace eru\Presenter\Exceptions;
 
 class PresenterException extends \Exception {}

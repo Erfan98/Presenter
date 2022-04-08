@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\Laracasts\Presenter;
+namespace spec\eru\Presenter;
 
 use Mockery;
 use PhpSpec\ObjectBehavior;
@@ -10,12 +10,12 @@ class PresentableTraitSpec extends ObjectBehavior
 {
 	function let()
 	{
-		$this->beAnInstanceOf('spec\Laracasts\Presenter\Foo');
+		$this->beAnInstanceOf('spec\eru\Presenter\Foo');
 	}
 
 	function it_is_initializable()
 	{
-		$this->shouldHaveType('spec\Laracasts\Presenter\Foo');
+		$this->shouldHaveType('spec\eru\Presenter\Foo');
 	}
 
 	function it_fetches_a_valid_presenter()
@@ -29,7 +29,7 @@ class PresentableTraitSpec extends ObjectBehavior
 	{
 		$this->presenter = 'Invalid';
 
-		$this->shouldThrow('Laracasts\Presenter\Exceptions\PresenterException')->duringPresent();
+		$this->shouldThrow('eru\Presenter\Exceptions\PresenterException')->duringPresent();
 	}
 
 	function it_caches_the_presenter_for_future_use()
@@ -47,7 +47,7 @@ class PresentableTraitSpec extends ObjectBehavior
 // package might do. This way, we can test the
 // trait.
 class Foo {
-	use \Laracasts\Presenter\PresentableTrait;
+	use \eru\Presenter\PresentableTrait;
 
 	public $presenter = 'FooPresenter';
 }

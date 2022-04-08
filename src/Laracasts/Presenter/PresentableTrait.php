@@ -1,6 +1,6 @@
-<?php namespace Laracasts\Presenter;
+<?php namespace eru\Presenter;
 
-use Laracasts\Presenter\Exceptions\PresenterException;
+use eru\Presenter\Exceptions\PresenterException;
 
 trait PresentableTrait {
 

@@ -1,5 +1,5 @@
 suites:
-  laracasts_suite:
-    namespace: Laracasts
+  eru_suite:
+    namespace: eru
     src_path: src
     spec_prefix: spec

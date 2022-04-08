@@ -1,4 +1,4 @@
-<?php namespace Laracasts\Presenter;
+<?php namespace eru\Presenter;
 
 abstract class Presenter {
 
